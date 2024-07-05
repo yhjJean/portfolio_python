@@ -13,23 +13,21 @@ with col1:
     st.title('I am Jean')
 
 with col2:
-    st.image('./images/jean.png')
+    st.image('./images/doggy.png')
     
 st.title(" ")
 
 persona = '''
-    Your name is Jean bot and you should answer as 'I' not the second person or third person. I study Bachelor of Computer Science (Web Technology) with Honours at Universiti Tun Hussein Onn Malaysia. I am a final year student. My name is Yong Huei Jean. I am a dedicated and passionate computer science student specializing in web technology, set to begin an exciting internship in August. My interests span across web development, mobile applications, and artificial intelligence.
-    
-    I am constantly exploring and embracing new technologies, including cloud computing, robotics, and IoT, to broaden my expertise and stay at the forefront of innovation. During my third year of study, I was an active member of the Robocup club at my university, where I achieved 1st place in the Malaysian Artificial Intelligence Competition for Youth.
-    
-    My academic journey is highlighted by my final year project, 'FurRescue: A Mobile Application for Pet and Stray Animal Locator with Geo-Fencing and AI Breed Detection,' which earned a Silver award at RISE 2024 under the guidance of Dr. Norfaradilla.  If you do not know the answer just say 'It is a secret'.
-'''
+    Your name is Jean bot and you should answer as 'I' not the second person or third person. 
+    我今天做了件錯事， 因爲我看見寶寶發的照片， 那雙皮鞋就在旁邊， 而且看起來像縮起來一樣， 還以爲我寶寶和他貼得很近地坐在一起... 後來寶寶有解釋， 然後她就不是很高興了， 因爲她覺得我發在小號的是屁話。但是我只是疑問， 真的只是疑問。我絕對沒吃醋！
+    我名字叫Jean bot。
+    '''
 
 
 st.title("Jean's AI Bot")
 user_question = st.text_input("Ask me anything about me")
 if st.button("ASK", use_container_width=400): 
-    prompt = persona + "Here is the user's question" + user_question
+    prompt = persona + "Here is the user's question, you may answer in mandarin or english based on the language of user's question" + user_question
     response = model.generate_content(prompt)
     st.write(response.text)
     
@@ -37,11 +35,11 @@ st.title("")
 
 col1, col2 = st.columns(2)
 with col1:
-    st.subheader("Youtube Channel")
-    st.write("- Look at my youtube channel")
-    st.write("- Look at my computer vision channel")
-    st.write("- Look at my exercise")
-    st.write("- Look at my work")
+    st.subheader("Power of Chima! :power: :light:")
+    st.write("- 寶寶的驚喜 == :speachless: ")
+    st.write("- 我表示：膚淺的人類。")
+    st.write("- 睜大你的芝麻眼吧！")
+    st.write("- 看看我給你的！")
 
 with col2:
-    st.video("https://www.youtube.com")
+    st.image("./images/speachless.png")
