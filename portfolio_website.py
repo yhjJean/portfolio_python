@@ -37,8 +37,8 @@ st.title("")
 
 col1, col2 = st.columns(2)
 with col1:
-    st.subheader("Power of Chima! :power: :fireworks:")
-    st.write("- 寶寶的驚喜 == :speachless: ")
+    st.subheader("Power of Chima! :muscle: :zap: :fireworks:")
+    st.write("- 寶寶的驚喜 == :zipper_mouth_face: ")
     st.write("- 我表示：膚淺的人類。")
     st.write("- 睜大你的芝麻眼吧！")
     st.write("- 看看我給你的！")
