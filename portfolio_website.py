@@ -29,7 +29,7 @@ persona = '''
 st.title("Jean's AI Bot")
 user_question = st.text_input("Ask me anything about me")
 if st.button("ASK", use_container_width=400): 
-    prompt = persona + "Here is the question" + user_question
+    prompt = persona + "Here is the user's question" + user_question
     response = model.generate_content(prompt)
     st.write(response.text)
     
